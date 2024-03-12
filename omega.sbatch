@@ -1,8 +1,8 @@
 #!/bin/sh
 #SBATCH --partition=general
 #SBATCH --job-name=OmegaF
-#SBATCH --qos=short         
-#SBATCH --time=4:00:00      
+#SBATCH --qos=long         
+#SBATCH --time=168:00:00      
 #SBATCH --ntasks=1         
 #SBATCH --cpus-per-task=2   
 #SBATCH --mem-per-cpu=100G
@@ -16,4 +16,4 @@ conda activate /tudelft.net/staff-umbrella/Enzymix/Enzymix/thesis
 
 export HOME=/tmp/mbhuradia/
 
-srun python main.py test.fasta out
+srun python main.py output.fasta out
