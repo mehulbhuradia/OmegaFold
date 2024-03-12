@@ -16,4 +16,4 @@ conda activate /tudelft.net/staff-umbrella/Enzymix/Enzymix/thesis
 
 export HOME=/tmp/mbhuradia/
 
-srun python main.py output.fasta out
+srun python main.py og.fasta out_og
